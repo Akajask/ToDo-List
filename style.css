@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+body{
+    background: url("/assets/background.png");
+}
+
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 200px auto auto;
+
+    
+}
+
+.input-task{
+    border: none;
+    border-radius: 6px;
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button-add-task:hover{
+    opacity: 0.7;
+}
+
+.button-add-task:active{
+    opacity: 0.5;
+}
+
+.list-text{
+    width: 100%;
+    list-style: none;
+}
+
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+    list-style: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+img{
+    height: 30px;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+.done{
+        background-color: #8fac55;
+        text-decoration: line-through;
+}
